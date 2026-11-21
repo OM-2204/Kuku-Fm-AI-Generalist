@@ -1,25 +1,73 @@
 # Kuku AI Generalist Lab
 
-Three small, rerunnable prototypes prepared for the Kuku AI Generalist assignment. The placement-cell instruction was to complete all three problems, so the application keeps them in separate tabs. Human review remains part of each workflow.
+Three small, rerunnable prototypes built for the Kuku AI Generalist assignment, combined in one Streamlit app. Each prototype sits in its own tab, and a human reviewer stays in the loop for every result.
 
-## Included
+**Live demo:** [kuku-fm-ai-generalist.streamlit.app](https://kuku-fm-ai-generalist-g8shuwk4u5p8yh7jqkjsma.streamlit.app/)
 
-- `app.py` — Streamlit application with all three tabs.
-- `problem1_promos/` — timestamp parser, heuristic promo-window ranker, optional OpenAI evaluator, and tests.
-- `problem2_legal/` — narrow rental security-deposit information organiser and refund-request drafter, with test cases.
-- `problem3_continuity/` — timestamp and continuity-note review checks, with tests.
-- `.env.example` — safe template for local API configuration.
-- `SOLUTION_NOTES.md`, `SOLUTION_DOC.pdf`, `WALKTHROUGH_SCRIPT.txt` — explanation and interview preparation.
+---
 
-The confidential screenplay ZIP is intentionally not embedded in this project. Upload the supplied ZIP locally in the Promo Finder and Script Continuity QA tabs. Do not publish the screenplay pack or generated screenplay-derived outputs to a public repository.
+## Contents
 
-## Setup (Windows)
+- [Overview](#overview)
+- [Features](#features)
+- [Project structure](#project-structure)
+- [Getting started](#getting-started)
+- [Configuration](#configuration)
+- [Deployment](#deployment)
+- [Problem details](#problem-details)
+- [Testing](#testing)
+- [Confidentiality and version control](#confidentiality-and-version-control)
+- [Limitations](#limitations)
 
-1. Extract this ZIP into a folder.
-2. Open the folder in File Explorer.
-3. Double-click `start_windows.bat`.
+---
 
-Or run manually from Command Prompt in the project folder:
+## Overview
+
+| Tab | Problem | What it does |
+|-----|---------|--------------|
+| 🎬 Promo Finder | Find the promos | Ranks 20–60 second windows in timestamped screenplays as promo candidates, with an optional OpenAI review of the top 10 |
+| 🏠 Rental Legal Helper | Rental deposit disputes (India) | Organises a tenant's account, lists evidence to collect, suggests next steps and drafts a refund request |
+| 🧾 Continuity QA | Script continuity | Flags timestamp problems and continuity-note terms that need human review |
+
+The baseline for every tab works without paid APIs. The only optional paid component is the OpenAI evaluation in Problem 1.
+
+## Features
+
+- Upload a screenplay ZIP, with protection against unsafe file paths inside the archive.
+- Transparent heuristic ranking, so scores can be reproduced.
+- Optional LLM evaluation with cost controls: a 10-candidate cap, bounded excerpts, structured JSON output, token limits, a preflight budget check and a local cache.
+- Hybrid scoring: 40% heuristic and 60% LLM. Failed evaluations are labelled as heuristic-only fallbacks and are never given a made-up hybrid score.
+- Plain-language case summaries and an editable draft letter for the rental helper.
+- CSV and JSON exports for the promo and continuity results.
+
+## Project structure
+
+```
+kuku_ai_generalist/
+├── .streamlit/
+│   └── config.toml           # Light theme settings
+├── problem1_promos/          # Timestamp parser, heuristic ranker, OpenAI evaluator, tests
+├── problem2_legal/           # Rental deposit organiser and refund-request drafter, tests
+├── problem3_continuity/      # Timestamp and continuity checks, tests
+├── validation/               # Validation material
+├── outputs/                  # Generated results (git-ignored)
+├── app.py                    # Streamlit app (all three tabs)
+├── requirements.txt          # Python dependencies
+├── .env.example              # Template for local API configuration
+├── .env                      # Your private keys (git-ignored, not committed)
+├── .gitignore
+└── README.md
+```
+
+The confidential screenplay ZIP is not included. Upload it in the app.
+
+## Getting started
+
+Python 3.10 or later is recommended.
+
+### Setup
+
+Windows (Command Prompt):
 
 ```bash
 python -m venv .venv
@@ -28,41 +76,83 @@ python -m pip install -r requirements.txt
 python -m streamlit run app.py
 ```
 
-Open the local URL printed by Streamlit (normally `http://localhost:8501`). Python 3.10+ is recommended.
+macOS / Linux:
 
-## Optional OpenAI setup (Problem 1 only)
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
+```
 
-1. Copy `.env.example` to a new file named `.env` in this folder.
-2. Put your own key in `OPENAI_API_KEY`.
-3. Keep `.env` private; it is excluded by `.gitignore`.
-4. Confirm `OPENAI_MODEL` is a model enabled for your API project. If needed, change it to the exact model ID shown in your OpenAI API account.
-5. Restart Streamlit, upload the screenplay ZIP in Promo Finder, run the heuristic shortlist, then click **Evaluate top 10 with OpenAI**.
+Open the local URL that Streamlit prints, normally `http://localhost:8501`.
 
-Cost controls include a maximum of 10 candidates per run, bounded screenplay excerpts, structured JSON output, output-token limits, a preflight estimated budget, usage-based cost estimation and a local cache. The heuristic score is retained. Hybrid score is 40% heuristic + 60% LLM. Failed LLM evaluations are not assigned a fake hybrid score; they are labelled as heuristic-only fallbacks.
+## Configuration
 
-The displayed cost is an estimate based on configured per-token rates and returned usage. Verify current model pricing independently; actual billing can differ. The API key and model access are controlled by your OpenAI account.
+The OpenAI evaluation is optional and affects Problem 1 only.
 
-## Problem 1 — Find the Promos
+1. Copy `.env.example` to a new file named `.env` in the project folder.
+2. Fill in the values below.
+3. Restart Streamlit.
 
-Upload a ZIP containing timestamped `.txt` screenplay files. The Python baseline extracts candidate 20–60 second windows and ranks them using text-based signals. The optional OpenAI layer evaluates only the top 10 heuristic candidates for hook strength, emotional intensity, conflict/tension, cliffhanger strength and standalone clarity. It returns schema-constrained JSON, explanations and a comparison CSV/JSON.
+| Variable | Purpose | Default |
+|----------|---------|---------|
+| `OPENAI_API_KEY` | Your OpenAI API key | none (LLM button stays disabled) |
+| `OPENAI_MODEL` | Model ID enabled for your API project | set in `app.py` |
+| `OPENAI_RUN_BUDGET_USD` | Maximum estimated spend per evaluation run | `0.25` |
 
-Limitations: text alone cannot assess acting, facial expressions, visuals, music, shot composition or real audience performance. A human editor must preview candidate footage before publishing.
+Keep `.env` private. It is excluded by `.gitignore`. Confirm that `OPENAI_MODEL` matches the exact model ID shown in your OpenAI account.
 
-## Problem 2 — Rental Legal Helper
+The cost shown in the app is an estimate based on configured per-token rates and the usage returned by the API. Check current pricing independently, because actual billing can differ.
 
-This is a deliberately narrow India-focused prototype for rental security-deposit disputes. It organises a tenant's account, identifies evidence to collect, suggests practical next steps and drafts a polite refund request. It is a rules-based information and drafting aid, not a lawyer and not a legal opinion. It does not cite statutes or case law; do not treat the output as legal advice. Users must verify dates, amounts, agreement clauses and local law, and seek qualified local advice where appropriate.
+## Deployment
 
-The UI presents the extracted case information in plain-language sections rather than raw JSON. Follow-up questions are limited to information that appears missing from the submitted account.
+The app is deployed on Streamlit Community Cloud:
+[kuku-fm-ai-generalist.streamlit.app](https://kuku-fm-ai-generalist-g8shuwk4u5p8yh7jqkjsma.streamlit.app/)
 
-## Problem 3 — Script Continuity QA
+Notes for the hosted version:
 
-Upload the same screenplay ZIP in the Script Continuity QA tab. The checker processes `.txt` files and reviews missing scene boundaries, backwards scene ordering, possible overlaps, timestamp entries outside the final scene envelope, and continuity-note terms that may need human review. It exports CSV and JSON.
+- Add secrets (`OPENAI_API_KEY` and any other variables above) in the app's **Settings → Secrets** panel. Do not commit a `.env` file.
+- The screenplay pack is not stored in the repository, so the bundled-pack buttons do not appear. Upload the ZIP in each tab instead.
+- Hosted files are not private. Do not upload confidential screenplays to a public deployment unless you are permitted to.
+- Files written to `outputs/` on the host are temporary and may disappear when the app restarts.
 
-A zero-flag result means the current rules did not detect a timestamp issue; it does not prove that the story is perfectly continuous. Continuity-note mismatches are review prompts, not automatic errors.
+## Problem details
 
-## Tests
+### Problem 1: Find the promos
 
-Run these from the project folder:
+Upload a ZIP of timestamped `.txt` screenplay files. The Python baseline extracts candidate 20–60 second windows and ranks them using text-based signals.
+
+The optional OpenAI layer evaluates only the top 10 heuristic candidates on hook strength, emotional intensity, conflict and tension, cliffhanger strength, and standalone clarity. It returns schema-constrained JSON with explanations, plus a comparison CSV and JSON.
+
+Text alone cannot judge acting, facial expressions, visuals, music, shot composition or real audience performance. An editor must preview the footage before anything is published.
+
+### Problem 2: Rental Legal Helper
+
+A deliberately narrow, India-focused prototype for rental security-deposit disputes. It:
+
+- organises the tenant's account into a plain-language case summary,
+- identifies evidence to collect and facts still to confirm,
+- suggests practical next steps,
+- drafts a polite, editable refund request.
+
+It is a rules-based information and drafting aid. It is not a lawyer and does not give legal opinions or cite statutes or case law. Verify all dates, amounts, agreement clauses and local law, and seek qualified local advice where appropriate. Follow-up questions are limited to information that appears to be missing from the submitted account.
+
+### Problem 3: Script Continuity QA
+
+Processes the `.txt` files in an uploaded ZIP and checks for:
+
+- missing scene boundaries,
+- scenes that run backwards in time,
+- possible overlaps,
+- timestamps outside the final scene envelope,
+- continuity-note terms that may need human review.
+
+Results can be exported as CSV and JSON. A zero-flag result means the current rules found no timestamp issue. It does not prove the story is continuous, and continuity-note matches are review prompts, not errors.
+
+## Testing
+
+Run from the project folder. On Windows (Command Prompt):
 
 ```bash
 set PYTHONPATH=problem1_promos
@@ -74,10 +164,29 @@ set PYTHONPATH=problem3_continuity
 python problem3_continuity\test_qc.py
 ```
 
-The included tests cover candidate duration, hybrid-score calculation, cost estimation, structured-response validation, rental-case handling, urgent-risk escalation and detection of a synthetic out-of-range timestamp. The supplied 50-episode screenplay ZIP was also processed during development: 50 episode files were read, 3,727 timed entries were parsed, 100 promo candidates were generated, and the continuity checker returned 50 episode rows with zero timestamp flags under its current rules. These are rule-based test observations, not proof of perfect output quality.
+On macOS / Linux, use `export PYTHONPATH=...` and forward slashes.
+
+The tests cover:
+
+- candidate duration,
+- hybrid-score calculation,
+- cost estimation,
+- structured-response validation,
+- rental-case handling and urgent-risk escalation,
+- detection of a synthetic out-of-range timestamp.
+
+During development the supplied 50-episode pack was also processed: 50 episode files were read, 3,727 timed entries were parsed, 100 promo candidates were generated, and the continuity checker returned 50 episode rows with zero timestamp flags under its current rules. These are rule-based observations, not proof of output quality.
 
 ## Confidentiality and version control
 
-- Do not commit `.env`, API keys, screenplay source files or screenplay-derived outputs to a public GitHub repository.
+- Do not commit `.env`, API keys, screenplay source files or screenplay-derived outputs to a public repository.
 - `.gitignore` excludes `.env`, `input_pack/`, `outputs/`, virtual environments and Python cache files.
 - Keep assignment files and deliverables in the private submission location specified by the placement cell.
+
+## Limitations
+
+- Promo ranking relies on text patterns and cannot assess anything visual or audible.
+- The LLM adds narrative interpretation but can be wrong or inconsistent, so scores are advisory.
+- The rental helper covers one narrow scenario and is not legal advice.
+- The continuity checker is rule-based and will miss issues outside its rules.
+- Every output is a draft for human review.

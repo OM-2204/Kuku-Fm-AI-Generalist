@@ -1,0 +1,12 @@
+{
+  "source_pack_included": false,
+  "reason": "Confidential assignment screenplay files are excluded from this source ZIP.",
+  "development_test": {
+    "episodes_processed": 50,
+    "timed_entries_parsed": 3727,
+    "promo_candidates_generated": 100,
+    "continuity_episode_rows": 50,
+    "timestamp_flags_detected": 0
+  },
+  "interpretation": "These are observed results from the supplied pack during local development. Zero flags means only that the implemented timestamp rules did not detect an issue."
+}

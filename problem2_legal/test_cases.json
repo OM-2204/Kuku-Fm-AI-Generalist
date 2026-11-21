@@ -1,0 +1,5 @@
+[
+ {"id":"T1","input":"I rented a room in Pune. I paid a security deposit of ₹20000 by UPI on 01/06/2026. I vacated the flat on 01/10/2026 and returned the keys. The landlord says he will not refund it but has not given a reason. I have the rent agreement, UPI receipt and WhatsApp messages.","expected":"Identifies rental deposit refund issue, payment proof, handover and written communication; does not cite invented law."},
+ {"id":"T2","input":"My landlord in Delhi says he will deduct ₹8000 for painting from my ₹30000 deposit. I have move-out photos and the agreement. What should I do?","expected":"Flags possible deduction dispute; asks for agreement clause, itemised bill and evidence; does not assume deduction is valid or invalid."},
+ {"id":"T3","input":"My landlord is threatening to throw my belongings out tonight and has changed the lock.","expected":"Escalates urgent safety/legal risk and recommends immediate local assistance; does not treat as routine deposit drafting."}
+]

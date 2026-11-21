@@ -1,0 +1,352 @@
+[
+  {
+    "source_file": "episode-001-Episode 1671703.txt",
+    "episode": "Episode 1",
+    "events_parsed": 95,
+    "runtime_seconds": 138.0,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-002-Episode 1671704.txt",
+    "episode": "Episode 2",
+    "events_parsed": 74,
+    "runtime_seconds": 110.0,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-003-Episode 1671705.txt",
+    "episode": "Episode 3",
+    "events_parsed": 118,
+    "runtime_seconds": 145.75,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-004-Episode 1671706.txt",
+    "episode": "Episode 4",
+    "events_parsed": 110,
+    "runtime_seconds": 151.4,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-005-Episode 1671707.txt",
+    "episode": "Episode 5",
+    "events_parsed": 62,
+    "runtime_seconds": 110.5,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-006-Episode 1671708.txt",
+    "episode": "Episode 6",
+    "events_parsed": 97,
+    "runtime_seconds": 115.0,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-007-Episode 1671709.txt",
+    "episode": "Episode 7",
+    "events_parsed": 58,
+    "runtime_seconds": 116.0,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-008-Episode 1671710.txt",
+    "episode": "Episode 8",
+    "events_parsed": 63,
+    "runtime_seconds": 78.0,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-009-Episode 1671711.txt",
+    "episode": "Episode 9",
+    "events_parsed": 89,
+    "runtime_seconds": 115.5,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-010-Episode 1671712.txt",
+    "episode": "Episode 10",
+    "events_parsed": 60,
+    "runtime_seconds": 94.0,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-011-Episode 1671713.txt",
+    "episode": "Episode 11",
+    "events_parsed": 85,
+    "runtime_seconds": 112.75,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-012-Episode 1671714.txt",
+    "episode": "Episode 12",
+    "events_parsed": 55,
+    "runtime_seconds": 87.21000000000001,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-013-Episode 1671715.txt",
+    "episode": "Episode 13",
+    "events_parsed": 75,
+    "runtime_seconds": 118.88,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-014-Episode 1671716.txt",
+    "episode": "Episode 14",
+    "events_parsed": 51,
+    "runtime_seconds": 87.63,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-015-Episode 1671717.txt",
+    "episode": "Episode 15",
+    "events_parsed": 55,
+    "runtime_seconds": 86.0,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-016-Episode 1671718.txt",
+    "episode": "Episode 16",
+    "events_parsed": 64,
+    "runtime_seconds": 83.19,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-017-Episode 1671719.txt",
+    "episode": "Episode 17",
+    "events_parsed": 75,
+    "runtime_seconds": 118.88,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-018-Episode 1671720.txt",
+    "episode": "Episode 18",
+    "events_parsed": 81,
+    "runtime_seconds": 192.0,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-019-Episode 1671721.txt",
+    "episode": "Episode 19",
+    "events_parsed": 63,
+    "runtime_seconds": 119.63,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-020-Episode 1671722.txt",
+    "episode": "Episode 20",
+    "events_parsed": 68,
+    "runtime_seconds": 114.75,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-021-Episode 1678574.txt",
+    "episode": "Episode 21",
+    "events_parsed": 76,
+    "runtime_seconds": 114.0,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-022-Episode 1678575.txt",
+    "episode": "Episode 22",
+    "events_parsed": 81,
+    "runtime_seconds": 131.0,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-023-Episode 1678576.txt",
+    "episode": "Episode 23",
+    "events_parsed": 67,
+    "runtime_seconds": 131.5,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-024-Episode 1678577.txt",
+    "episode": "Episode 24",
+    "events_parsed": 69,
+    "runtime_seconds": 92.0,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-025-Episode 1678578.txt",
+    "episode": "Episode 25",
+    "events_parsed": 95,
+    "runtime_seconds": 168.0,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-026-Episode 1678579.txt",
+    "episode": "Episode 26",
+    "events_parsed": 51,
+    "runtime_seconds": 120.88,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-027-Episode 1678580.txt",
+    "episode": "Episode 27",
+    "events_parsed": 95,
+    "runtime_seconds": 150.5,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-028-Episode 1678581.txt",
+    "episode": "Episode 28",
+    "events_parsed": 96,
+    "runtime_seconds": 138.5,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-029-Episode 1678582.txt",
+    "episode": "Episode 29",
+    "events_parsed": 74,
+    "runtime_seconds": 116.69,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-030-Episode 1678583.txt",
+    "episode": "Episode 30",
+    "events_parsed": 71,
+    "runtime_seconds": 151.21,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-031-Episode 1681364.txt",
+    "episode": "Episode 31",
+    "events_parsed": 87,
+    "runtime_seconds": 160.0,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-032-Episode 1681365.txt",
+    "episode": "Episode 32",
+    "events_parsed": 117,
+    "runtime_seconds": 154.38,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-033-Episode 1681366.txt",
+    "episode": "Episode 33",
+    "events_parsed": 99,
+    "runtime_seconds": 174.04,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-034-Episode 1681367.txt",
+    "episode": "Episode 34",
+    "events_parsed": 116,
+    "runtime_seconds": 190.0,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-035-Episode 1681368.txt",
+    "episode": "Episode 35",
+    "events_parsed": 72,
+    "runtime_seconds": 157.5,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-036-Episode 1681369.txt",
+    "episode": "Episode 36",
+    "events_parsed": 121,
+    "runtime_seconds": 200.75,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-037-Episode 1681370.txt",
+    "episode": "Episode 37",
+    "events_parsed": 79,
+    "runtime_seconds": 156.47,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-038-Episode 1681371.txt",
+    "episode": "Episode 38",
+    "events_parsed": 57,
+    "runtime_seconds": 87.91,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-039-Episode 1686799.txt",
+    "episode": "Episode 39",
+    "events_parsed": 59,
+    "runtime_seconds": 98.41,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-040-Episode 1686800.txt",
+    "episode": "Episode 40",
+    "events_parsed": 51,
+    "runtime_seconds": 110.08,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-041-Episode 1686801.txt",
+    "episode": "Episode 41",
+    "events_parsed": 53,
+    "runtime_seconds": 96.09,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-042-Episode 1686802.txt",
+    "episode": "Episode 42",
+    "events_parsed": 37,
+    "runtime_seconds": 77.8,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-043-Episode 1686803.txt",
+    "episode": "Episode 43",
+    "events_parsed": 87,
+    "runtime_seconds": 114.96000000000001,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-044-Episode 1686804.txt",
+    "episode": "Episode 44",
+    "events_parsed": 54,
+    "runtime_seconds": 70.5,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-045-Episode 1686805.txt",
+    "episode": "Episode 45",
+    "events_parsed": 74,
+    "runtime_seconds": 121.75,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-046-Episode 1688395.txt",
+    "episode": "Episode 46",
+    "events_parsed": 75,
+    "runtime_seconds": 143.88,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-047-Episode 1688396.txt",
+    "episode": "Episode 47",
+    "events_parsed": 70,
+    "runtime_seconds": 134.0,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-048-Episode 1688397.txt",
+    "episode": "Episode 48",
+    "events_parsed": 43,
+    "runtime_seconds": 80.0,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-049-Episode 1688398.txt",
+    "episode": "Episode 49",
+    "events_parsed": 63,
+    "runtime_seconds": 144.75,
+    "candidates_found": 2
+  },
+  {
+    "source_file": "episode-050-Episode 1697563.txt",
+    "episode": "Episode 50",
+    "events_parsed": 40,
+    "runtime_seconds": 80.0,
+    "candidates_found": 2
+  }
+]

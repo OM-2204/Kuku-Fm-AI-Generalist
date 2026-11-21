@@ -1,0 +1,239 @@
+{
+  "58a31cfe05c7eddc552ebb09bf81b532907bb6c54d696a9429685149c932e5c3": {
+    "evaluation": {
+      "hook_score": 7,
+      "emotional_intensity": 8,
+      "conflict_tension": 9,
+      "cliffhanger_score": 8,
+      "standalone_clarity": 8,
+      "llm_score": 80,
+      "hook_explanation": "The matriarch’s opening rebuke establishes hostility immediately, though it is less visually or contextually specific than the later order to remove Juliana.",
+      "cliffhanger_explanation": "The stranger orders the guards to release Juliana, and the matriarch’s furious “Who are you?” leaves his identity and the confrontation unresolved.",
+      "why_it_works": "The excerpt clearly builds from family rejection to Juliana being dragged from the chapel, then introduces a forceful stranger. The emotional stakes and escalating action are easy to follow in a 45-second cut.",
+      "weaknesses": [
+        "The opening line is emotionally sharp but gives a new viewer little context; consider opening on the guards seizing Juliana or the matriarch ordering them to remove her.",
+        "The excerpt ends before showing whether the stranger can stop the guards, so the central rescue remains unresolved."
+      ],
+      "recommendation": "HIGH"
+    },
+    "usage": {
+      "input_tokens": 1393,
+      "output_tokens": 377
+    },
+    "cached_at": 1795247196.096247
+  },
+  "7bf891a5b7a20bea0abe6739aa8b51a6e16417c1022afc25c2ed3b67d0614e9e": {
+    "evaluation": {
+      "hook_score": 6,
+      "emotional_intensity": 9,
+      "conflict_tension": 9,
+      "cliffhanger_score": 5,
+      "standalone_clarity": 7,
+      "llm_score": 72,
+      "hook_explanation": "“How long?” creates an immediate question, but its subject is unclear without context. The opening shots show hostility but don’t establish the betrayal.",
+      "cliffhanger_explanation": "“I am the daughter they choose” is a sharp final sting, but it lands as a completed insult rather than an unresolved beat.",
+      "why_it_works": "Juliana’s pleas to her father and the family’s escalating rejection build a clear emotional progression, ending on a pointed comparison with Clarissa.",
+      "weaknesses": [
+        "The excerpt does not explain what Juliana is asking “How long?” about.",
+        "The wedding and Gerald’s role in the betrayal are not made clear within this segment.",
+        "The ending lacks a new unanswered question or impending action; consider cutting on a stronger unresolved moment if one is available elsewhere in the scene."
+      ],
+      "recommendation": "MEDIUM"
+    },
+    "usage": {
+      "input_tokens": 1053,
+      "output_tokens": 428
+    },
+    "cached_at": 1795247203.7625751
+  },
+  "889980f78eaca599376a90286258b4695822049a74e1180c83160d34bc37e3ac": {
+    "evaluation": {
+      "hook_score": 8,
+      "emotional_intensity": 9,
+      "conflict_tension": 9,
+      "cliffhanger_score": 9,
+      "standalone_clarity": 7,
+      "llm_score": 84,
+      "hook_explanation": "Juliana’s cutting line immediately provokes Catherine, and the branding iron quickly makes the danger visible. The opening begins mid-sentence, which slightly weakens the hook.",
+      "cliffhanger_explanation": "Catherine raises the branding iron and threatens Juliana, then the excerpt ends before it touches her. The danger is clear and unresolved.",
+      "why_it_works": "Juliana’s defiance escalates into a sharp verbal confrontation, while Catherine’s growing rage and the hot iron create strong visual and emotional tension. The exchange is understandable without knowing the full story.",
+      "weaknesses": [
+        "The opening ellipsis signals missing context and makes Juliana’s first line feel like part of a longer exchange.",
+        "The excerpt establishes the immediate danger but gives little background on the characters or why Catherine is holding Juliana captive.",
+        "The final threat is strong, but the excerpt does not show what Catherine does next."
+      ],
+      "recommendation": "HIGH"
+    },
+    "usage": {
+      "input_tokens": 969,
+      "output_tokens": 411
+    },
+    "cached_at": 1795247210.9834578
+  },
+  "0dcdbc489172efda9a269a43f265c2fc09dba94683c07aa7296b27c98ba58555": {
+    "evaluation": {
+      "hook_score": 6,
+      "emotional_intensity": 8,
+      "conflict_tension": 8,
+      "cliffhanger_score": 5,
+      "standalone_clarity": 6,
+      "llm_score": 66,
+      "hook_explanation": "The opening gives an urgent “I have to,” but without context it is vague. The poisoning accusation arrives later and supplies a stronger hook.",
+      "cliffhanger_explanation": "Juliana’s refusal to abandon the sick woman leaves their disagreement unresolved, but it does not introduce a sharp new reveal or immediate threat.",
+      "why_it_works": "Alexander’s fury and fear collide with Juliana’s determined compassion, building a clear emotional conflict around her choice to stay involved.",
+      "weaknesses": [
+        "The opening line depends on context that a new viewer does not yet have.",
+        "The excerpt mentions poisoning and that Juliana was struck, but does not explain who is responsible or how the poisoning connects to her.",
+        "The final line is a firm statement of resolve rather than a strong suspense beat."
+      ],
+      "recommendation": "MEDIUM"
+    },
+    "usage": {
+      "input_tokens": 878,
+      "output_tokens": 330
+    },
+    "cached_at": 1795247217.1677587
+  },
+  "f41e4eebf55d3659151f23d770425171588d27b69a26bfa077ada066f14716b8": {
+    "evaluation": {
+      "hook_score": 6,
+      "emotional_intensity": 8,
+      "conflict_tension": 9,
+      "cliffhanger_score": 4,
+      "standalone_clarity": 7,
+      "llm_score": 68,
+      "hook_explanation": "“Of course” is a soft, context-dependent opening; the herbarium and witchcraft threat create a stronger hook shortly afterward.",
+      "cliffhanger_explanation": "Catherine’s final line lands as a cruel declaration, but it resolves the exchange rather than opening a new question or threat.",
+      "why_it_works": "The threat to burn Juliana’s mother’s herbarium and frame her for witchcraft is clear and escalating, with Juliana’s defiance supplying emotional force.",
+      "weaknesses": [
+        "The opening line has little impact without prior context.",
+        "The closing insult feels conclusive; end on “I can burn it” or the corpse-at-the-rope threat for a sharper unresolved beat.",
+        "The excerpt does not explain the wider stakes of Juliana saving the Duchess."
+      ],
+      "recommendation": "MEDIUM"
+    },
+    "usage": {
+      "input_tokens": 914,
+      "output_tokens": 399
+    },
+    "cached_at": 1795247223.8706484
+  },
+  "99fd1af5678e979bb8c3ce1c43e820a317f23720a3cf5d07d9344902ee83bef6": {
+    "evaluation": {
+      "hook_score": 7,
+      "emotional_intensity": 9,
+      "conflict_tension": 9,
+      "cliffhanger_score": 7,
+      "standalone_clarity": 6,
+      "llm_score": 76,
+      "hook_explanation": "The cruel line lands quickly and is followed by a sudden crop strike. “Then let her suffer” is compelling but unclear without its preceding context.",
+      "cliffhanger_explanation": "Juliana’s vow and the reveal of the hidden journal and vial create anticipation, but the ending is a declaration rather than a new immediate threat or unanswered event.",
+      "why_it_works": "The excerpt builds from physical violence to degrading punishment, then shifts to Juliana’s concealed resolve. The sick Duchess and hidden remedy items give her defiance a clear visual purpose.",
+      "weaknesses": [
+        "A new viewer may not know why Juliana is in the Duchess’s room or what the vial is meant to do.",
+        "The final vow is strong but somewhat general; the excerpt does not show whether Juliana can reach the Duchess or complete the cure."
+      ],
+      "recommendation": "HIGH"
+    },
+    "usage": {
+      "input_tokens": 1701,
+      "output_tokens": 425
+    },
+    "cached_at": 1795247230.91588
+  },
+  "729f16e220942fe42a83478752863a4466f96e4ba1322fee8fd2f48a7def9df4": {
+    "evaluation": {
+      "hook_score": 7,
+      "emotional_intensity": 8,
+      "conflict_tension": 7,
+      "cliffhanger_score": 4,
+      "standalone_clarity": 7,
+      "llm_score": 66,
+      "hook_explanation": "Juliana’s opening line signals hurt and raises an immediate question, though the source of the cruelty is initially unclear.",
+      "cliffhanger_explanation": "The closing line lands as an emotional statement, but it resolves the moment rather than leaving a clear unanswered question or imminent choice.",
+      "why_it_works": "The proposal, Juliana’s fear of being treated as charity, and the man’s vow create a clear emotional build. The ring and family watching provide useful visual context.",
+      "weaknesses": [
+        "The excerpt does not show Juliana accepting the proposal, the wedding, or the pair leaving; those outcomes should not be implied in the promo.",
+        "The final voice-over feels conclusive. End instead on an existing unresolved beat, such as Juliana’s challenge about charity or his vow.",
+        "Some family context remains vague for new viewers. A brief visual or line identifying the family’s rejection would sharpen the conflict."
+      ],
+      "recommendation": "MEDIUM"
+    },
+    "usage": {
+      "input_tokens": 1144,
+      "output_tokens": 428
+    },
+    "cached_at": 1795247237.8883388
+  },
+  "095418a80383afacf3c35e292d8e1d1d83bc43aa68b06338ea657494287df176": {
+    "evaluation": {
+      "hook_score": 7,
+      "emotional_intensity": 8,
+      "conflict_tension": 9,
+      "cliffhanger_score": 7,
+      "standalone_clarity": 7,
+      "llm_score": 76,
+      "hook_explanation": "The constable’s immediate declaration that a search will settle the matter starts the excerpt with a clear threat. It’s compelling, though it would hit harder if the accusation were briefly made explicit.",
+      "cliffhanger_explanation": "Alexander is restrained as he resists striking Gerald, and his final line frames the personal cost of acting. The beat leaves tension hanging, but doesn’t reveal a new discovery or a sharper unanswered question.",
+      "why_it_works": "The search escalates into Juliana’s distress, Gerald’s provocation, and Alexander’s visible struggle to protect her. The stakes and relationships are mostly understandable without prior context.",
+      "weaknesses": [
+        "The excerpt moves through many beats and could feel crowded in a 45-second cut.",
+        "The theft accusation and what is at stake are not fully established within this excerpt.",
+        "The ending is emotionally tense but lands more on Alexander’s restraint than on a concrete cliffhanger."
+      ],
+      "recommendation": "HIGH"
+    },
+    "usage": {
+      "input_tokens": 1294,
+      "output_tokens": 377
+    },
+    "cached_at": 1795247244.5119557
+  },
+  "516e6d36023de5d296f1495c0d52634177d56abc2df888736dcd3e5290c1746a": {
+    "evaluation": {
+      "hook_score": 8,
+      "emotional_intensity": 8,
+      "conflict_tension": 8,
+      "cliffhanger_score": 8,
+      "standalone_clarity": 8,
+      "llm_score": 80,
+      "hook_explanation": "The frantic entrance and urgent claim that Toby cannot breathe establish danger immediately, though the strongest line comes after the opening action.",
+      "cliffhanger_explanation": "Prudence’s plea ends on Juliana being Toby’s only hope, leaving her decision and Toby’s fate unresolved.",
+      "why_it_works": "The child’s crisis, the apothecary’s refusal over money, and the doctor’s callousness build clear emotional stakes in a short sequence.",
+      "weaknesses": [
+        "Juliana’s response is not shown, so the excerpt ends before the choice or rescue begins.",
+        "The cottage, clinic, and coltsfoot references rely on context not explained here."
+      ],
+      "recommendation": "HIGH"
+    },
+    "usage": {
+      "input_tokens": 939,
+      "output_tokens": 361
+    },
+    "cached_at": 1795247251.0752218
+  },
+  "20b1b590e7b75997989dd082fff10f874dc5716f3b47b574cdd60c8b37b0ee80": {
+    "evaluation": {
+      "hook_score": 8,
+      "emotional_intensity": 7,
+      "conflict_tension": 9,
+      "cliffhanger_score": 8,
+      "standalone_clarity": 7,
+      "llm_score": 78,
+      "hook_explanation": "The stranger steps into the aisle and immediately orders the guards to release Juliana, creating a clear, forceful opening.",
+      "cliffhanger_explanation": "The former groom calls for the remaining guards to act just after one guard is dropped, leaving the confrontation unresolved. The excerpt does not show what happens next.",
+      "why_it_works": "The threat escalates from a public seizure to a direct challenge and a sudden takedown. The chapel setting and Juliana behind the guards make the core conflict legible without much setup.",
+      "weaknesses": [
+        "The excerpt does not explain why Juliana is being seized or establish her relationship to the people confronting her.",
+        "The final line raises the stakes but does not show the remaining guards responding.",
+        "The episode logline’s proposal is not present in this excerpt, so it cannot serve as the promo’s payoff."
+      ],
+      "recommendation": "HIGH"
+    },
+    "usage": {
+      "input_tokens": 922,
+      "output_tokens": 347
+    },
+    "cached_at": 1795247257.3795986
+  }
+}

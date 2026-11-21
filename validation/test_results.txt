@@ -1,0 +1,22 @@
+KUKU AI GENERALIST LAB — DEVELOPMENT VALIDATION
+
+Automated local tests:
+PASS — Promo candidate windows remain within 20–60 seconds.
+PASS — Hybrid scoring calculation, positive cost estimate and structured JSON schema checks.
+PASS — Rental-deposit case structure, no fabricated legal citations and urgent-threat escalation.
+PASS — Synthetic timestamp-out-of-range scenario is flagged.
+PASS — Python syntax compilation for app and modules.
+
+Supplied screenplay pack processing (local development test):
+- Episode text files processed: 50
+- Timed entries parsed by promo parser: 3,727
+- Promo candidate windows generated: 100
+- Continuity report episode rows: 50
+- Timestamp flags found by current rules: 0
+
+User's earlier live OpenAI screenshot (not a fresh run of this final ZIP):
+- Successful evaluations displayed: 8
+- Failed evaluations displayed: 2
+- Estimated usage cost displayed: approximately USD 0.00121
+
+The current package includes one bounded retry and structured response validation. A fresh live OpenAI run is required to verify whether the two earlier parsing failures are resolved. Cost figures are estimates, not billing guarantees. Zero QC flags do not prove the screenplay has no continuity errors.
